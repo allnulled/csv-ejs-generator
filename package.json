@@ -1,12 +1,25 @@
 {
   "name": "csv-ejs-generator",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Generate files from csv files and ejs templates",
+  "main": "src/csv-ejs-generator.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test/*.test.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allnulled/csv-ejs-generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/allnulled/csv-ejs-generator/issues"
+  },
+  "homepage": "https://github.com/allnulled/csv-ejs-generator#readme",
+  "dependencies": {
+    "csv-parse": "^4.8.5",
+    "ejs": "^3.0.1",
+    "yargs": "^15.1.0"
+  }
 }
