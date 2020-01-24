@@ -1,6 +1,10 @@
 # csv-ejs-gen
 
+![](https://img.shields.io/badge/version-1.0.0-green.svg) ![](https://img.shields.io/badge/tests-passing-green.svg) ![](https://img.shields.io/badge/coverage-no-red.svg) 
+
 Generate files from `ejs`/`js` templates and `csv`/`json` files, via **CLI** or **API**.
+
+[![NPM](https://nodei.co/npm/progene.png?stars&downloads)](https://www.npmjs.com/package/progene)
 
 ## Introduction
 
@@ -9,6 +13,10 @@ This package can help you to create files from `csv`/`json` data and `ejs` templ
 This package can be used as API or CLI.
 
 Both, API and CLI share options.
+
+## Installation
+
+`~$ npm install -g csv-ejs-gen`
 
 ## Options
 
@@ -55,12 +63,34 @@ The **generator options** refer to the output of the process.
    - It accepts multiple files.
    - They are the output files of the `*.ejs` files passed to the `--ejs` parameter.
    - It uses the same order of the `--ejs` parameters.
-
-
+   - When an `*.ejs` file has no output specified, the output will be the same `*.ejs.txt`.
 
 ## CLI
 
+To see the help:
+
+`~$ ceg --help`
+
+The accepted parameters are the ones listed in the previous point.
+
 ## API
 
-## Conclusion
+To use the API, you can use the method:
+
+```js
+const CsvEjsGenerator = require("csv-ejs-generator");
+CsvEjsGenerator.execution({...});
+```
+
+The parameters accepted by this method are the same parameters of the options, but instead of:
+
+`--json-scopes`
+
+...you have to provide...:
+
+`{ jsonScopes : [...] }`
+
+The API does the same as the CLI.
+
+
 
