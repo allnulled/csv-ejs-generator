@@ -1,4 +1,4 @@
-# csv-ejs-gen
+# csv-ejs-generator
 
 ![](https://img.shields.io/badge/version-1.0.0-green.svg) ![](https://img.shields.io/badge/tests-passing-green.svg) ![](https://img.shields.io/badge/coverage-no-red.svg) 
 
@@ -16,7 +16,7 @@ Both, API and CLI share options.
 
 ## Installation
 
-`~$ npm install -g csv-ejs-gen`
+`~$ npm install -g csv-ejs-generator`
 
 ## Options
 
